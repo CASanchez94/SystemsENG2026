@@ -1,0 +1,9 @@
+<h2>User Profile</h2>
+<form method="post">
+{% csrf_token %}
+{{ u_form.as_p }}
+{{ p_form.as_p }}
+<button type = "update profile">Profile /button>
+</form>
+
+<a href ="{% url 'Home' %}">Home</a>
